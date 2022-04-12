@@ -21,7 +21,7 @@ public class Aparelhos implements Serializable {
 	@Column(length = 40)
 	private String modeloAparelho;
 	private boolean statusAparelho;
-	private int numeroOs;
+	private int numeroOs = 0;
 	
 	public Aparelhos() {
 

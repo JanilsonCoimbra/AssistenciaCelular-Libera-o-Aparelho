@@ -13,24 +13,13 @@
 <body class="d-flex justify-content-between align-items-center flex-column bg-danger">
    <header class="container bg-danger d-flex flex-column align-items-center m-3">
       <h1 class="d-none">MisterInforCell</h1>
-      <img class="align-items-center col-5 col-md-2 rounded-circle" src="./img/logo.png" alt="logomarca vermelha da infocell" >
+      <img class="align-items-center col-5 col-md-2 rounded-circle" src="/img/logo.png" alt="logomarca vermelha da infocell" />
    </header>
    <h2 class="text-white">Consulta OS Realizada</h2>
    <section class="container d-flex justify-content-around align-items-center bg-white">
       <h3 id="result" th:text="${nome}"></h3>
       <a class="btn btn-info" href="/">Voltar</a>
    </section>
-         <script>
-      	const result = document.querySelector("#result");
-         function checarText(){
-            if(result.textContent == "true"){
-               result.textContent = "SEU APARELHO ESTÁ PRONTO"
-            }else{
-               result.textContent = "SEU APARELHO NÃO PRONTO"
-            }
-         }
-         checarText();
-      </script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>

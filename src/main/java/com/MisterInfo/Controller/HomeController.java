@@ -28,12 +28,14 @@ public class HomeController {
 	}
 	
 	@GetMapping("/consulta/{os}")
-	public String consultaOS(HttpServletRequest request, @PathVariable int os) {
+	public String consultaOS(HttpServletRequest request, @PathVariable float os) {
+		
 			List<Aparelhos> ap = APConsulta.findAll();
 			Aparelhos selecao = new Aparelhos();
 			ap.forEach(item -> {
 
 				if(item.getNumeroOs() == os) {
+										
 					selecao.setId(item.getId());
 					selecao.setModeloAparelho(item.getModeloAparelho());
 					selecao.setNumeroOs(item.getNumeroOs());

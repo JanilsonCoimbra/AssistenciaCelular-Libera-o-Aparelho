@@ -35,7 +35,8 @@ public class HomeController {
 			ap.forEach(item -> {
 
 				if(item.getNumeroOs() == os) {
-										
+					// Se o numero de OS for igual ao que foi passado na URL, ele pega os dados do aparelho
+					// e coloca no objeto selecao
 					selecao.setId(item.getId());
 					selecao.setModeloAparelho(item.getModeloAparelho());
 					selecao.setNumeroOs(item.getNumeroOs());
